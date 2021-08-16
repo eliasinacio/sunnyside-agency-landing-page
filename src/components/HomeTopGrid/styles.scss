@@ -1,0 +1,73 @@
+.home {
+  width: 100%;
+  overflow-x: hidden;
+
+  .home-grid {
+    width: 100%;
+    margin-top: -5px;
+    gap: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    @media (max-width: 560px) { display: flex; flex-direction: column; }
+  }
+}
+
+#top-img {
+  width: 100%;
+
+  background-color: #3DBEFF;
+
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#first {
+  background-color: #fff;
+  width: 100%;
+}
+
+#second {
+  width: 100%;
+  background: hsl(51, 100%, 49%);
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#third {
+  background-color: #fd7867;
+    width: 100%;
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+#fourth {
+  background-color: #fff;
+}
+#fifth {
+  background-color: #8dd4c6;
+    width: 100%;
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+#sixth {
+  background-color: #60cbff;
+    width: 100%;
+  img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
