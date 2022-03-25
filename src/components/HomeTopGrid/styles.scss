@@ -1,9 +1,14 @@
 .home {
   width: 100%;
   overflow-x: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   .home-grid {
     width: 100%;
+    max-width: 1440px;
     margin-top: -5px;
     gap: 0;
 
@@ -11,13 +16,52 @@
     grid-template-columns: 1fr 1fr;
     
     @media (max-width: 560px) { display: flex; flex-direction: column; }
+
+    color: #353535;
+    
+    h2 {
+      font-family: 'Fraunces';
+      font-size: 2.8rem;
+    }
+
+    a {
+      font-family: 'Fraunces';
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: inherit;
+      border-bottom: 7px solid rgba(253, 149, 80, 0.603);
+    }
+
+    p {
+      font-family: 'Barlow';
+      font-weight: 500;
+      margin: 50px 0 50px;
+      line-height: 20px;
+      color: #5f5f5f;
+    }
+  }
+
+  background-color: #3DBEFF;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Fraunces';
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  text-align: center;
+
+  @media (max-width: 560px) {
+    top: 0;
+    font-size: 2.8rem;
   }
 }
 
 #top-img {
   width: 100%;
-
-  background-color: #3DBEFF;
+  max-width: 1440px;
 
   img {
     width: 100%;
@@ -28,12 +72,29 @@
 
 #first {
   background-color: #fff;
-  width: 100%;
+  padding: 120px 100px;
+
+  @media (max-width: 560px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+
+    h2 { 
+      font-size: 2.2rem;
+    }
+  }
 }
 
 #second {
   width: 100%;
   background: hsl(51, 100%, 49%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 100%;
     margin: 0;
@@ -43,28 +104,57 @@
 
 #third {
   background-color: #fd7867;
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 }
+
 #fourth {
   background-color: #fff;
+  padding: 120px 100px;
+
+  @media (max-width: 560px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+
+    h2 { 
+      font-size: 2.2rem;
+    }
+  }
 }
+
 #fifth {
   background-color: #8dd4c6;
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 }
+
 #sixth {
   background-color: #60cbff;
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 100%;
     margin: 0;
